@@ -22,7 +22,7 @@
     {"displayName": "CustomFieldList", "name": "customFieldList", "type": "string"}
   ],
   "CurrencyRate": [
-    {"displayName": "exchangeRate", "name": "Exchange Rate", "type": "double"}
+    {"displayName": "exchangeRate", "name": "Exchange Rate", "type": "string"}
   ],
   "TaxItems": [
     {"displayName": "Id", "name": "internalId", "type": "string"},

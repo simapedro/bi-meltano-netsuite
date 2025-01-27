@@ -21,7 +21,7 @@
     {"displayName": "Subsidiary", "name": "subsidiary", "type": "string"},
     {"displayName": "CustomFieldList", "name": "customFieldList", "type": "string"}
   ],
-  "CurrencyRate": [
+  "CurrencyRates": [
     {"displayName": "exchangeRate", "name": "Exchange Rate", "type": "string"}
   ],
   "TaxItems": [

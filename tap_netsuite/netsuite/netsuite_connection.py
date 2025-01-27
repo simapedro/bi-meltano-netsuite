@@ -3,7 +3,7 @@ from netsuitesdk.api.classifications import Classifications
 from netsuitesdk.api.departments import Departments
 from netsuitesdk.api.currencies import Currencies
 from netsuitesdk.api.locations import Locations
-from netsuitesdk.api.currencyRate import CurrencyRate
+from netsuitesdk.api.currencyRates import CurrencyRates
 from netsuitesdk.api.vendors import Vendors
 from netsuitesdk.api.subsidiaries import Subsidiaries
 from netsuitesdk.api.employees import Employees
@@ -21,7 +21,7 @@ from netsuitesdk.api.projects import Projects
 import time
 import json
 import singer
-from .transaction_entities import Customers, PurchaseOrder, Invoice, CurrencyRate, JournalEntries, InventoryTransfer, InventoryAdjustment, InventoryItem, VendorBills, VendorPayments, SalesOrders, CreditMemos, Items, InboundShipment, BankAccounts, Locations
+from .transaction_entities import Customers, PurchaseOrder, Invoice, JournalEntries, InventoryTransfer, InventoryAdjustment, InventoryItem, VendorBills, VendorPayments, SalesOrders, CreditMemos, Items, InboundShipment, BankAccounts, Locations
 from .netsuite_client import ExtendedNetSuiteClient
 
 LOGGER = singer.get_logger()
@@ -56,7 +56,6 @@ class ExtendedNetSuiteConnection:
         self.projects = Projects(ns_client)
         self.vendor_payments = VendorPayments(ns_client)
         self.invoice = Invoice(ns_client)
-        self.currencyRate = CurrencyRate(ns_client)
 
         self.entities = {
             'Customer': Customers(ns_client),
@@ -82,7 +81,7 @@ class ExtendedNetSuiteConnection:
             "Projects": Projects(ns_client),
             "BankAccounts": BankAccounts(ns_client),
             "Locations": Locations(ns_client),
-            "CurrencyRate": CurrencyRate(ns_client),
+            "CurrencyRates": CurrencyRates(ns_client),
         }
 
     def _query_entity(self, data, entity, stream):

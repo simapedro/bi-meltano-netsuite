@@ -53,25 +53,6 @@ class Customers(ApiBase):
     def post(self, data) -> OrderedDict:
         return None
 
-class CurrencyRate(ApiBase):
-    def __init__(self, ns_client):
-        ApiBase.__init__(self, ns_client=ns_client, type_name='currencyRate')
-        self.require_lastModified_date = True
-
-    def get_all(self, last_modified_date=None):
-        return self.get_all_generator(last_modified_date=last_modified_date)
-
-    def get_all_generator(self, page_size=200, last_modified_date=None):
-        search_record = self.ns_client.basic_search_factory(type_name="currencyRate",
-                                                            lastModifiedDate=last_modified_date)
-        ps = PaginatedSearch(client=self.ns_client, type_name='currencyRate', pageSize=page_size,
-                             search_record=search_record)
-        return self._paginated_search_to_generator(ps)
-
-    def post(self, data) -> OrderedDict:
-        return None
-
-
 class InboundShipment(ApiBase):
     def __init__(self, ns_client):
         ApiBase.__init__(self, ns_client=ns_client, type_name='InboundShipment')

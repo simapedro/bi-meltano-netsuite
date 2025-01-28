@@ -24,6 +24,9 @@
   "CurrencyRates": [
     {"displayName": "exchangeRate", "name": "Exchange Rate", "type": "string"}
   ],
+  "Currency": [
+    {"displayName": "symbol", "name": "ISO Code", "type": "string"}
+  ],
   "TaxItems": [
     {"displayName": "Id", "name": "internalId", "type": "string"},
     {"displayName": "ItemId", "name": "itemId", "type": "string"},

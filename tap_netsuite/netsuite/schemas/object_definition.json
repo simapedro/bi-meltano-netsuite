@@ -22,9 +22,11 @@
     {"displayName": "CustomFieldList", "name": "customFieldList", "type": "string"}
   ],
   "CurrencyRates": [
+    {"displayName": "Id", "name": "internalId", "type": "string"},
     {"displayName": "Exchange Rate", "name": "exchangeRate", "type": "string"}
   ],
   "Contacts": [
+    {"displayName": "Id", "name": "internalId", "type": "string"},
     {"displayName": "Full Name", "name": "firstname", "type": "string"}
   ],
   "TaxItems": [

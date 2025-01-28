@@ -23,11 +23,11 @@
   ],
   "CurrencyRates": [
     {"displayName": "Id", "name": "internalId", "type": "string"},
-    {"displayName": "Exchange Rate", "name": "exchangeRate", "type": "string"}
+    {"displayName": "ExchangeRate", "name": "exchangeRate", "type": "string"}
   ],
   "Contacts": [
     {"displayName": "Id", "name": "internalId", "type": "string"},
-    {"displayName": "Full Name", "name": "firstname", "type": "string"}
+    {"displayName": "FullName", "name": "firstname", "type": "string"}
   ],
   "TaxItems": [
     {"displayName": "Id", "name": "internalId", "type": "string"},

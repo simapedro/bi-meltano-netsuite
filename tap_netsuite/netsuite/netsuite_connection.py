@@ -4,7 +4,6 @@ from netsuitesdk.api.departments import Departments
 from netsuitesdk.api.currencies import Currencies
 from netsuitesdk.api.locations import Locations
 from netsuitesdk.api.currencyRates import CurrencyRates
-from netsuitesdk.api.currency import Currency
 from netsuitesdk.api.vendors import Vendors
 from netsuitesdk.api.subsidiaries import Subsidiaries
 from netsuitesdk.api.employees import Employees
@@ -83,7 +82,6 @@ class ExtendedNetSuiteConnection:
             "BankAccounts": BankAccounts(ns_client),
             "Locations": Locations(ns_client),
             "CurrencyRates": CurrencyRates(ns_client),
-            "Currency": Currency(ns_client),
         }
 
     def _query_entity(self, data, entity, stream):

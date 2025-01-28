@@ -24,6 +24,9 @@
   "CurrencyRates": [
     {"displayName": "exchangeRate", "name": "Exchange Rate", "type": "string"}
   ],
+  "Contacts": [
+    {"displayName": "firstname", "name": "Full Name", "type": "string"}
+  ],
   "TaxItems": [
     {"displayName": "Id", "name": "internalId", "type": "string"},
     {"displayName": "ItemId", "name": "itemId", "type": "string"},

@@ -21,6 +21,10 @@
     {"displayName": "Subsidiary", "name": "subsidiary", "type": "string"},
     {"displayName": "CustomFieldList", "name": "customFieldList", "type": "string"}
   ],
+  "Currencies": [
+    {"displayName": "Id", "name": "internalId", "type": "string"},
+    {"displayName": "name", "name": "name", "type": "string"}
+  ],  
   "CurrencyRates": [
     {"displayName": "Id", "name": "internalId", "type": "string"},
     {"displayName": "ExchangeRate", "name": "exchangeRate", "type": "string"}

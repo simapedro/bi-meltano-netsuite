@@ -84,6 +84,7 @@ class ExtendedNetSuiteConnection:
             "Locations": Locations(ns_client),
             "CurrencyRates": CurrencyRates(ns_client),
             "Contacts": Contacts(ns_client),
+            "Currencies": Currencies(ns_client),
         }
 
     def _query_entity(self, data, entity, stream):

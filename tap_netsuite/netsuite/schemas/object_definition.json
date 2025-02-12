@@ -23,7 +23,8 @@
   ],
   "Currencies": [
     {"displayName": "Id", "name": "internalId", "type": "string"},
-    {"displayName": "name", "name": "name", "type": "string"}
+    {"displayName": "Name", "name": "name", "type": "string"},
+    {"displayName": "Exchangerate", "name": "exchangerate", "type": "string"}
   ],  
   "CurrencyRates": [
     {"displayName": "Id", "name": "internalId", "type": "string"},

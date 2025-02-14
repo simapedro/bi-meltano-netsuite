@@ -37,8 +37,8 @@ def field_to_property_schema(field):  # pylint:disable=too-many-branches
 
     double_type = {
         "type": [
-            "null",
-            "double"
+            "double",
+            "null"
         ]
     }
 

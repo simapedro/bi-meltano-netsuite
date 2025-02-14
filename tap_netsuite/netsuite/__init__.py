@@ -35,6 +35,13 @@ def field_to_property_schema(field):  # pylint:disable=too-many-branches
         ]
     }
 
+    double_type = {
+        "type": [
+            "null",
+            "double"
+        ]
+    }
+
     string_type = {
         "type": [
             "string",
@@ -71,6 +78,7 @@ def field_to_property_schema(field):  # pylint:disable=too-many-branches
     }
 
     ns_types = {
+        "double": double_type,
         "number": number_type,
         "string": string_type,
         "datetime": datetime_type,

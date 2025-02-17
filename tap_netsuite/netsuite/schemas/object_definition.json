@@ -27,7 +27,8 @@
     {"displayName": "Exchangerate", "name": "exchangerate", "type": "double"}
   ],  
   "CurrencyRates": [
-    {"displayName": "ExchangeRate", "name": "exchangeRate", "type": "double"}
+    {"displayName": "ExchangeRate", "name": "exchangeRate", "type": "double"},
+    {"displayName": "Id", "name": "internalId", "type": "string"}
   ],
   "Contacts": [
     {"displayName": "Id", "name": "internalId", "type": "string"},
